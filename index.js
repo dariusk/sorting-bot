@@ -308,24 +308,6 @@ function phrase5() {
   return res;
 }
 
-function tweet() {
-  generate().then(function(myTweet) {
-    if (!wordfilter.blacklisted(myTweet)) {
-      console.log(myTweet);
-      /*
-      T.post('statuses/update', { status: myTweet }, function(err, reply) {
-        if (err) {
-          console.log('error:', err);
-        }
-        else {
-          console.log('reply:', reply);
-        }
-      });
-      */
-    }
-  });
-}
-
 console.log('START');
 
 function popQueue() {
